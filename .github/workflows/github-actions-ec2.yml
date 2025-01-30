@@ -45,7 +45,7 @@ jobs:
             sudo echo 'server {
               listen 80;
               listen [::]:80;
-              root /var/www/Snake-And-Ladder-Game/Build;
+              root /var/www/html/Snake-And-Ladder-Game/Build;
 
               #react app
               location / { 
