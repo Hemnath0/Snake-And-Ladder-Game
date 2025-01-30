@@ -38,14 +38,14 @@ jobs:
             echo installing nginx
             sudo apt install nginx -y
             cd /var/www/html
-            sudo git clone {git link}
+            sudo git clone https://github.com/Hemnath0/Snake-And-Ladder-Game.git
             cd /etc/nginx/conf.d
             sudo touch react.conf
             sudo chmod 666 /etc/nginx/conf.d/react.conf
             sudo echo 'server {
               listen 80;
               listen [::]:80;
-              root /var/www/{repository name}/Build;
+              root /var/www/Snake-And-Ladder-Game/Build;
 
               #react app
               location / { 
